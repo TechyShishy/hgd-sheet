@@ -1346,6 +1346,9 @@
 .sheet-rolltemplate-sheet-name .sheet-template .guts-header {
   background-color: rgb(48, 52, 148);
 }
+.sheet-rolltemplate-sheet-name .sheet-template .pawsize-section .fill-left__radio {
+  margin-right: 0.25rem;
+}
 .sheet-rolltemplate-sheet-name .sheet-template .tabs {
   flex-direction: column;
 }
@@ -2511,6 +2514,9 @@ body .ui-dialog .tab-content .charsheet .guts-header {
 }
 body .ui-dialog .tab-content .charsheet .stats-view {
   display: grid;
+}
+body .ui-dialog .tab-content .charsheet .pawsize-section .fill-left__radio {
+  margin-right: 0.25rem;
 }
 body .ui-dialog .tab-content .charsheet .tabs {
   flex-direction: column;

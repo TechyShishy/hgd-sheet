@@ -1,10 +1,13 @@
 mixin pawsize
     .pawsize-section
+        label(for='pawsize', data-i18n='Pawsize')
         +fillLeft({
             radioObj:{name:'pawsize',value:4},
             valueArray:[4,5,6,7]
         })
-        +input-label({
-            inputObj:{name:'pawsize',type:'text'},
-            spanObj:{'data-i18n':'Paw Size'}
-        })
+    +scss.
+        .pawsize-section {
+            .fill-left__radio{
+                margin-right: 0.25rem;
+            }
+        }
