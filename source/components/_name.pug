@@ -1,9 +1,7 @@
 mixin name()
     .name-component
-        +input-label({
-            inputObj:{name:'name',type:'text'},
-            spanObj:{'data-i18n':'Name'}
-        })
+        label(for='attr_name',data-i18n='Name')
+        +adaptiveInput({name:'name', type:'text'})
     +scss.
         .name-component {
             input {

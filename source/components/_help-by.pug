@@ -1,9 +1,7 @@
 mixin help-by()
     .help-by-component
-        +input-label({
-            inputObj:{name:'help-by',type:'text'},
-            spanObj:{'data-i18n':'I Help By'}
-        })
+        label(for='attr_help-by',data-i18n='I Help By')
+        +adaptiveInput({name:'help-by', type:'text'})
     +scss.
         .help-by-component {
             input {

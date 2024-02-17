@@ -1,13 +1,11 @@
 mixin description()
     .description-component
-        +input-label({
-                inputObj:{name:'description',type:'text'},
-                spanObj:{'data-i18n':'Description'}
-            })
+        label(for='attr_description',data-i18n='Description')
+        +adaptiveTextarea({name:'description'})
 
     +scss.
         .description-component {
-            input {
+            textarea {
                 border: 1px solid var(--dm-borderColor);
             }
             label{

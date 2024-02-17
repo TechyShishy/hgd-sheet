@@ -1,9 +1,7 @@
 mixin neighborhood()
     .neighborhood-component
-        +input-label({
-            inputObj:{name:'neighborhood',type:'text'},
-            spanObj:{'data-i18n':'Neighborhood Is'}
-        })
+        label(for='attr_neighborhood',data-i18n='Neighborhood')
+        +adaptiveInput({name:'neighborhood', type:'text'})
     +scss.
         .neighborhood-component {
             input {

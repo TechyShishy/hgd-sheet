@@ -1,18 +1,19 @@
 mixin ability({name})
     .ability-component
-        +input-label({
-            inputObj:{name:`${name}_max`,type:'text'},
-            spanObj:{'data-i18n':`${name} Max`}
-        })
+        label(for=`attr_${name}_max`, data-i18n='Max')
         +fillLeft({
             radioObj:{name:`${name}_max`,value:0},
-            valueArray:[0,1,2,3,4,5]
+            valueArray:[1,2,3,4,5,6,7,8,9,10]
         })
-        +input-label({
-            inputObj:{name:`${name}`,type:'text'},
-            spanObj:{'data-i18n':`${name} Current`}
-        })
+        label(for=`attr_${name}`, data-i18n='Current')
         +fillLeft({
             radioObj:{name:`${name}`,value:0},
-            valueArray:[0,1,2,3,4,5]
+            valueArray:[1,2,3,4,5,6,7,8,9,10]
         })
+    +scss.
+        .ability-component {
+            display:grid;
+            grid-auto-flow: row;
+            grid-template-columns: repeat(2, 1fr);
+            align-content: center;
+        }

@@ -1230,7 +1230,7 @@
   border: var(--inlineRollImportantBorder);
   margin: var(--inlineRollImportantMargin);
 }
-.sheet-rolltemplate-sheet-name .sheet-template .description-component input {
+.sheet-rolltemplate-sheet-name .sheet-template .description-component textarea {
   border: 1px solid var(--dm-borderColor);
 }
 .sheet-rolltemplate-sheet-name .sheet-template .description-component label {
@@ -1269,18 +1269,82 @@
 .sheet-rolltemplate-sheet-name .sheet-template .collar-section {
   display: grid;
   grid-auto-flow: column;
+  align-items: center;
+}
+.sheet-rolltemplate-sheet-name .sheet-template .appearance-block, .sheet-rolltemplate-sheet-name .sheet-template .collar-name, .sheet-rolltemplate-sheet-name .sheet-template .collar-background {
+  width: 16rem;
+}
+.sheet-rolltemplate-sheet-name .sheet-template .ability-component {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(2, 1fr);
+  align-content: center;
+}
+.sheet-rolltemplate-sheet-name .sheet-template .skill-component label {
+  text-transform: capitalize;
+}
+.sheet-rolltemplate-sheet-name .sheet-template .skill-component label {
+  text-transform: capitalize;
+}
+.sheet-rolltemplate-sheet-name .sheet-template .skill-component label {
+  text-transform: capitalize;
+}
+.sheet-rolltemplate-sheet-name .sheet-template .ability-component {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(2, 1fr);
+  align-content: center;
+}
+.sheet-rolltemplate-sheet-name .sheet-template .skill-component label {
+  text-transform: capitalize;
+}
+.sheet-rolltemplate-sheet-name .sheet-template .skill-component label {
+  text-transform: capitalize;
+}
+.sheet-rolltemplate-sheet-name .sheet-template .skill-component label {
+  text-transform: capitalize;
+}
+.sheet-rolltemplate-sheet-name .sheet-template .ability-component {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(2, 1fr);
+  align-content: center;
+}
+.sheet-rolltemplate-sheet-name .sheet-template .skill-component label {
+  text-transform: capitalize;
+}
+.sheet-rolltemplate-sheet-name .sheet-template .skill-component label {
+  text-transform: capitalize;
+}
+.sheet-rolltemplate-sheet-name .sheet-template .skill-component label {
+  text-transform: capitalize;
 }
 .sheet-rolltemplate-sheet-name .sheet-template .skill-subsection {
   display: grid;
   width: 24rem;
 }
+.sheet-rolltemplate-sheet-name .sheet-template .skill-subsection .fill-left__radio {
+  margin-right: 0.25rem;
+}
 .sheet-rolltemplate-sheet-name .sheet-template .brawn-section, .sheet-rolltemplate-sheet-name .sheet-template .smarts-section, .sheet-rolltemplate-sheet-name .sheet-template .guts-section {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-auto-flow: column;
+  padding: 1rem;
+  justify-items: start;
+  align-items: start;
 }
-.sheet-rolltemplate-sheet-name .sheet-template .brawn-section .input-label__text, .sheet-rolltemplate-sheet-name .sheet-template .smarts-section .input-label__text, .sheet-rolltemplate-sheet-name .sheet-template .guts-section .input-label__text {
-  text-transform: capitalize;
+.sheet-rolltemplate-sheet-name .sheet-template .brawn-section .fill-left__radio, .sheet-rolltemplate-sheet-name .sheet-template .smarts-section .fill-left__radio, .sheet-rolltemplate-sheet-name .sheet-template .guts-section .fill-left__radio {
+  margin-right: 0.25rem;
+}
+.sheet-rolltemplate-sheet-name .sheet-template .brawn-header {
+  background-color: rgb(160, 20, 100);
+}
+.sheet-rolltemplate-sheet-name .sheet-template .smarts-header {
+  background-color: rgb(32, 100, 52);
+}
+.sheet-rolltemplate-sheet-name .sheet-template .guts-header {
+  background-color: rgb(48, 52, 148);
 }
 .sheet-rolltemplate-sheet-name .sheet-template .tabs {
   flex-direction: column;
@@ -2329,7 +2393,7 @@ body .ui-dialog .tab-content .charsheet .repcontrol-button--add::before {
   font-size: 12px;
   content: "add";
 }
-body .ui-dialog .tab-content .charsheet .description-component input {
+body .ui-dialog .tab-content .charsheet .description-component textarea {
   border: 1px solid var(--dm-borderColor);
 }
 body .ui-dialog .tab-content .charsheet .description-component label {
@@ -2368,18 +2432,82 @@ body .ui-dialog .tab-content .charsheet .neighborhood-component label {
 body .ui-dialog .tab-content .charsheet .collar-section {
   display: grid;
   grid-auto-flow: column;
+  align-items: center;
+}
+body .ui-dialog .tab-content .charsheet .appearance-block, body .ui-dialog .tab-content .charsheet .collar-name, body .ui-dialog .tab-content .charsheet .collar-background {
+  width: 16rem;
+}
+body .ui-dialog .tab-content .charsheet .ability-component {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(2, 1fr);
+  align-content: center;
+}
+body .ui-dialog .tab-content .charsheet .skill-component label {
+  text-transform: capitalize;
+}
+body .ui-dialog .tab-content .charsheet .skill-component label {
+  text-transform: capitalize;
+}
+body .ui-dialog .tab-content .charsheet .skill-component label {
+  text-transform: capitalize;
+}
+body .ui-dialog .tab-content .charsheet .ability-component {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(2, 1fr);
+  align-content: center;
+}
+body .ui-dialog .tab-content .charsheet .skill-component label {
+  text-transform: capitalize;
+}
+body .ui-dialog .tab-content .charsheet .skill-component label {
+  text-transform: capitalize;
+}
+body .ui-dialog .tab-content .charsheet .skill-component label {
+  text-transform: capitalize;
+}
+body .ui-dialog .tab-content .charsheet .ability-component {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(2, 1fr);
+  align-content: center;
+}
+body .ui-dialog .tab-content .charsheet .skill-component label {
+  text-transform: capitalize;
+}
+body .ui-dialog .tab-content .charsheet .skill-component label {
+  text-transform: capitalize;
+}
+body .ui-dialog .tab-content .charsheet .skill-component label {
+  text-transform: capitalize;
 }
 body .ui-dialog .tab-content .charsheet .skill-subsection {
   display: grid;
   width: 24rem;
 }
+body .ui-dialog .tab-content .charsheet .skill-subsection .fill-left__radio {
+  margin-right: 0.25rem;
+}
 body .ui-dialog .tab-content .charsheet .brawn-section, body .ui-dialog .tab-content .charsheet .smarts-section, body .ui-dialog .tab-content .charsheet .guts-section {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-auto-flow: column;
+  padding: 1rem;
+  justify-items: start;
+  align-items: start;
 }
-body .ui-dialog .tab-content .charsheet .brawn-section .input-label__text, body .ui-dialog .tab-content .charsheet .smarts-section .input-label__text, body .ui-dialog .tab-content .charsheet .guts-section .input-label__text {
-  text-transform: capitalize;
+body .ui-dialog .tab-content .charsheet .brawn-section .fill-left__radio, body .ui-dialog .tab-content .charsheet .smarts-section .fill-left__radio, body .ui-dialog .tab-content .charsheet .guts-section .fill-left__radio {
+  margin-right: 0.25rem;
+}
+body .ui-dialog .tab-content .charsheet .brawn-header {
+  background-color: rgb(160, 20, 100);
+}
+body .ui-dialog .tab-content .charsheet .smarts-header {
+  background-color: rgb(32, 100, 52);
+}
+body .ui-dialog .tab-content .charsheet .guts-header {
+  background-color: rgb(48, 52, 148);
 }
 body .ui-dialog .tab-content .charsheet .stats-view {
   display: grid;

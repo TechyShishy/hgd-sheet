@@ -1,9 +1,7 @@
 mixin breed()
     .breed-component
-        +input-label({
-            inputObj:{name:'breed',type:'text'},
-            spanObj:{'data-i18n':'Breed'}
-        })
+        label(for='attr_breed',data-i18n='Breed')
+        +adaptiveInput({name:'breed', type:'text'})
     +scss.
         .breed-component {
             input {
@@ -11,6 +9,6 @@ mixin breed()
             }
             label{
                 display:grid;
-                
+
             }
         }

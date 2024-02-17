@@ -22,77 +22,85 @@
   <div class="collar-section">
     <div class="appearance-block">
       <div class="description-component">
-        <label class="input-label"><span class="input-label__text" data-i18n="Description"></span>
-          <input class="input-label__input" name="attr_description" type="text" title="@{description}"/>
-        </label>
+        <label for="attr_description" data-i18n="Description"></label>
+        <div class="adaptive adaptive--text"><span class="adaptive--text__span" name="attr_description" title="@{description}"></span>
+          <textarea class="adaptive--text__textarea" name="attr_description" title="@{description}"></textarea>
+        </div>
       </div>
       <div class="breed-component">
-        <label class="input-label"><span class="input-label__text" data-i18n="Breed"></span>
-          <input class="input-label__input" name="attr_breed" type="text" title="@{breed}"/>
-        </label>
+        <label for="attr_breed" data-i18n="Breed"></label>
+        <div class="adaptive adaptive--input"><span class="adaptive--input__span" name="attr_breed" title="@{breed}"></span>
+          <input class="adaptive--input__input" name="attr_breed" type="text" title="@{breed}"/>
+        </div>
       </div>
     </div>
     <div class="collar-name">
       <div class="name-component">
-        <label class="input-label"><span class="input-label__text" data-i18n="Name"></span>
-          <input class="input-label__input" name="attr_name" type="text" title="@{name}"/>
-        </label>
+        <label for="attr_name" data-i18n="Name"></label>
+        <div class="adaptive adaptive--input"><span class="adaptive--input__span" name="attr_name" title="@{name}"></span>
+          <input class="adaptive--input__input" name="attr_name" type="text" title="@{name}"/>
+        </div>
       </div>
     </div>
     <div class="collar-background">
       <div class="best-friend-component">
-        <label class="input-label"><span class="input-label__text" data-i18n="My Best Friend"></span>
-          <input class="input-label__input" name="attr_best-friend" type="text" title="@{best-friend}"/>
-        </label>
+        <label for="attr_best-friend" data-i18n="My Best Friend"></label>
+        <div class="adaptive adaptive--input"><span class="adaptive--input__span" name="attr_best-friend" title="@{best-friend}"></span>
+          <input class="adaptive--input__input" name="attr_best-friend" type="text" title="@{best-friend}"/>
+        </div>
       </div>
       <div class="help-by-component">
-        <label class="input-label"><span class="input-label__text" data-i18n="I Help By"></span>
-          <input class="input-label__input" name="attr_help-by" type="text" title="@{help-by}"/>
-        </label>
+        <label for="attr_help-by" data-i18n="I Help By"></label>
+        <div class="adaptive adaptive--input"><span class="adaptive--input__span" name="attr_help-by" title="@{help-by}"></span>
+          <input class="adaptive--input__input" name="attr_help-by" type="text" title="@{help-by}"/>
+        </div>
       </div>
       <div class="neighborhood-component">
-        <label class="input-label"><span class="input-label__text" data-i18n="Neighborhood Is"></span>
-          <input class="input-label__input" name="attr_neighborhood" type="text" title="@{neighborhood}"/>
-        </label>
+        <label for="attr_neighborhood" data-i18n="Neighborhood"></label>
+        <div class="adaptive adaptive--input"><span class="adaptive--input__span" name="attr_neighborhood" title="@{neighborhood}"></span>
+          <input class="adaptive--input__input" name="attr_neighborhood" type="text" title="@{neighborhood}"/>
+        </div>
       </div>
     </div>
   </div>
   <div class="stats-view">
-    <div class="brawn-section"> 
+    <h3 class="brawn-header" data-i18n="Brawn (Moving)"></h3>
+    <div class="brawn-section">
       <div class="ability-component">
-        <label class="input-label"><span class="input-label__text" data-i18n="brawn Max"></span>
-          <input class="input-label__input" name="attr_brawn_max" type="text" title="@{brawn|max}"/>
-        </label>
+        <label for="attr_brawn_max" data-i18n="Max"></label>
         <div class="fill-left">
           <input class="fill-left__radio" name="attr_brawn_max" value="0" type="hidden" title="@{brawn|max}"/>
-          <input class="fill-left__radio" name="attr_brawn_max" value="0" checked="" type="checkbox" title="@{brawn|max}"/>
           <input class="fill-left__radio" name="attr_brawn_max" value="1" type="checkbox" title="@{brawn|max}"/>
           <input class="fill-left__radio" name="attr_brawn_max" value="2" type="checkbox" title="@{brawn|max}"/>
           <input class="fill-left__radio" name="attr_brawn_max" value="3" type="checkbox" title="@{brawn|max}"/>
           <input class="fill-left__radio" name="attr_brawn_max" value="4" type="checkbox" title="@{brawn|max}"/>
           <input class="fill-left__radio" name="attr_brawn_max" value="5" type="checkbox" title="@{brawn|max}"/>
+          <input class="fill-left__radio" name="attr_brawn_max" value="6" type="checkbox" title="@{brawn|max}"/>
+          <input class="fill-left__radio" name="attr_brawn_max" value="7" type="checkbox" title="@{brawn|max}"/>
+          <input class="fill-left__radio" name="attr_brawn_max" value="8" type="checkbox" title="@{brawn|max}"/>
+          <input class="fill-left__radio" name="attr_brawn_max" value="9" type="checkbox" title="@{brawn|max}"/>
+          <input class="fill-left__radio" name="attr_brawn_max" value="10" type="checkbox" title="@{brawn|max}"/>
         </div>
-        <label class="input-label"><span class="input-label__text" data-i18n="brawn Current"></span>
-          <input class="input-label__input" name="attr_brawn" type="text" title="@{brawn}"/>
-        </label>
+        <label for="attr_brawn" data-i18n="Current"></label>
         <div class="fill-left">
           <input class="fill-left__radio" name="attr_brawn" value="0" type="hidden" title="@{brawn}"/>
-          <input class="fill-left__radio" name="attr_brawn" value="0" checked="" type="checkbox" title="@{brawn}"/>
           <input class="fill-left__radio" name="attr_brawn" value="1" type="checkbox" title="@{brawn}"/>
           <input class="fill-left__radio" name="attr_brawn" value="2" type="checkbox" title="@{brawn}"/>
           <input class="fill-left__radio" name="attr_brawn" value="3" type="checkbox" title="@{brawn}"/>
           <input class="fill-left__radio" name="attr_brawn" value="4" type="checkbox" title="@{brawn}"/>
           <input class="fill-left__radio" name="attr_brawn" value="5" type="checkbox" title="@{brawn}"/>
+          <input class="fill-left__radio" name="attr_brawn" value="6" type="checkbox" title="@{brawn}"/>
+          <input class="fill-left__radio" name="attr_brawn" value="7" type="checkbox" title="@{brawn}"/>
+          <input class="fill-left__radio" name="attr_brawn" value="8" type="checkbox" title="@{brawn}"/>
+          <input class="fill-left__radio" name="attr_brawn" value="9" type="checkbox" title="@{brawn}"/>
+          <input class="fill-left__radio" name="attr_brawn" value="10" type="checkbox" title="@{brawn}"/>
         </div>
       </div>
       <div class="skill-subsection">
         <div class="skill-component">
-          <label class="input-label"><span class="input-label__text" data-i18n="performing Feats Of Agility and Strength"></span>
-            <input class="input-label__input" name="attr_performing" type="text" title="@{performing}"/>
-          </label>
+          <label for="performing" data-i18n="performing Feats Of Agility and Strength"></label>
           <div class="fill-left">
             <input class="fill-left__radio" name="attr_performing" value="0" type="hidden" title="@{performing}"/>
-            <input class="fill-left__radio" name="attr_performing" value="0" checked="" type="checkbox" title="@{performing}"/>
             <input class="fill-left__radio" name="attr_performing" value="1" type="checkbox" title="@{performing}"/>
             <input class="fill-left__radio" name="attr_performing" value="2" type="checkbox" title="@{performing}"/>
             <input class="fill-left__radio" name="attr_performing" value="3" type="checkbox" title="@{performing}"/>
@@ -101,12 +109,9 @@
           </div>
         </div>
         <div class="skill-component">
-          <label class="input-label"><span class="input-label__text" data-i18n="staying In Place No Matter What"></span>
-            <input class="input-label__input" name="attr_staying" type="text" title="@{staying}"/>
-          </label>
+          <label for="staying" data-i18n="staying In Place No Matter What"></label>
           <div class="fill-left">
             <input class="fill-left__radio" name="attr_staying" value="0" type="hidden" title="@{staying}"/>
-            <input class="fill-left__radio" name="attr_staying" value="0" checked="" type="checkbox" title="@{staying}"/>
             <input class="fill-left__radio" name="attr_staying" value="1" type="checkbox" title="@{staying}"/>
             <input class="fill-left__radio" name="attr_staying" value="2" type="checkbox" title="@{staying}"/>
             <input class="fill-left__radio" name="attr_staying" value="3" type="checkbox" title="@{staying}"/>
@@ -115,12 +120,9 @@
           </div>
         </div>
         <div class="skill-component">
-          <label class="input-label"><span class="input-label__text" data-i18n="sneaking Around"></span>
-            <input class="input-label__input" name="attr_sneaking" type="text" title="@{sneaking}"/>
-          </label>
+          <label for="sneaking" data-i18n="sneaking Around"></label>
           <div class="fill-left">
             <input class="fill-left__radio" name="attr_sneaking" value="0" type="hidden" title="@{sneaking}"/>
-            <input class="fill-left__radio" name="attr_sneaking" value="0" checked="" type="checkbox" title="@{sneaking}"/>
             <input class="fill-left__radio" name="attr_sneaking" value="1" type="checkbox" title="@{sneaking}"/>
             <input class="fill-left__radio" name="attr_sneaking" value="2" type="checkbox" title="@{sneaking}"/>
             <input class="fill-left__radio" name="attr_sneaking" value="3" type="checkbox" title="@{sneaking}"/>
@@ -130,41 +132,43 @@
         </div>
       </div>
     </div>
+    <h3 class="smarts-header" data-i18n="Smarts (Thinking)"></h3>
     <div class="smarts-section">
       <div class="ability-component">
-        <label class="input-label"><span class="input-label__text" data-i18n="smarts Max"></span>
-          <input class="input-label__input" name="attr_smarts_max" type="text" title="@{smarts|max}"/>
-        </label>
+        <label for="attr_smarts_max" data-i18n="Max"></label>
         <div class="fill-left">
           <input class="fill-left__radio" name="attr_smarts_max" value="0" type="hidden" title="@{smarts|max}"/>
-          <input class="fill-left__radio" name="attr_smarts_max" value="0" checked="" type="checkbox" title="@{smarts|max}"/>
           <input class="fill-left__radio" name="attr_smarts_max" value="1" type="checkbox" title="@{smarts|max}"/>
           <input class="fill-left__radio" name="attr_smarts_max" value="2" type="checkbox" title="@{smarts|max}"/>
           <input class="fill-left__radio" name="attr_smarts_max" value="3" type="checkbox" title="@{smarts|max}"/>
           <input class="fill-left__radio" name="attr_smarts_max" value="4" type="checkbox" title="@{smarts|max}"/>
           <input class="fill-left__radio" name="attr_smarts_max" value="5" type="checkbox" title="@{smarts|max}"/>
+          <input class="fill-left__radio" name="attr_smarts_max" value="6" type="checkbox" title="@{smarts|max}"/>
+          <input class="fill-left__radio" name="attr_smarts_max" value="7" type="checkbox" title="@{smarts|max}"/>
+          <input class="fill-left__radio" name="attr_smarts_max" value="8" type="checkbox" title="@{smarts|max}"/>
+          <input class="fill-left__radio" name="attr_smarts_max" value="9" type="checkbox" title="@{smarts|max}"/>
+          <input class="fill-left__radio" name="attr_smarts_max" value="10" type="checkbox" title="@{smarts|max}"/>
         </div>
-        <label class="input-label"><span class="input-label__text" data-i18n="smarts Current"></span>
-          <input class="input-label__input" name="attr_smarts" type="text" title="@{smarts}"/>
-        </label>
+        <label for="attr_smarts" data-i18n="Current"></label>
         <div class="fill-left">
           <input class="fill-left__radio" name="attr_smarts" value="0" type="hidden" title="@{smarts}"/>
-          <input class="fill-left__radio" name="attr_smarts" value="0" checked="" type="checkbox" title="@{smarts}"/>
           <input class="fill-left__radio" name="attr_smarts" value="1" type="checkbox" title="@{smarts}"/>
           <input class="fill-left__radio" name="attr_smarts" value="2" type="checkbox" title="@{smarts}"/>
           <input class="fill-left__radio" name="attr_smarts" value="3" type="checkbox" title="@{smarts}"/>
           <input class="fill-left__radio" name="attr_smarts" value="4" type="checkbox" title="@{smarts}"/>
           <input class="fill-left__radio" name="attr_smarts" value="5" type="checkbox" title="@{smarts}"/>
+          <input class="fill-left__radio" name="attr_smarts" value="6" type="checkbox" title="@{smarts}"/>
+          <input class="fill-left__radio" name="attr_smarts" value="7" type="checkbox" title="@{smarts}"/>
+          <input class="fill-left__radio" name="attr_smarts" value="8" type="checkbox" title="@{smarts}"/>
+          <input class="fill-left__radio" name="attr_smarts" value="9" type="checkbox" title="@{smarts}"/>
+          <input class="fill-left__radio" name="attr_smarts" value="10" type="checkbox" title="@{smarts}"/>
         </div>
       </div>
       <div class="skill-subsection">
         <div class="skill-component">
-          <label class="input-label"><span class="input-label__text" data-i18n="sensing What Others Feel"></span>
-            <input class="input-label__input" name="attr_sensing" type="text" title="@{sensing}"/>
-          </label>
+          <label for="sensing" data-i18n="sensing What Others Feel"></label>
           <div class="fill-left">
             <input class="fill-left__radio" name="attr_sensing" value="0" type="hidden" title="@{sensing}"/>
-            <input class="fill-left__radio" name="attr_sensing" value="0" checked="" type="checkbox" title="@{sensing}"/>
             <input class="fill-left__radio" name="attr_sensing" value="1" type="checkbox" title="@{sensing}"/>
             <input class="fill-left__radio" name="attr_sensing" value="2" type="checkbox" title="@{sensing}"/>
             <input class="fill-left__radio" name="attr_sensing" value="3" type="checkbox" title="@{sensing}"/>
@@ -173,12 +177,9 @@
           </div>
         </div>
         <div class="skill-component">
-          <label class="input-label"><span class="input-label__text" data-i18n="knowing About Stuff"></span>
-            <input class="input-label__input" name="attr_knowing" type="text" title="@{knowing}"/>
-          </label>
+          <label for="knowing" data-i18n="knowing About Stuff"></label>
           <div class="fill-left">
             <input class="fill-left__radio" name="attr_knowing" value="0" type="hidden" title="@{knowing}"/>
-            <input class="fill-left__radio" name="attr_knowing" value="0" checked="" type="checkbox" title="@{knowing}"/>
             <input class="fill-left__radio" name="attr_knowing" value="1" type="checkbox" title="@{knowing}"/>
             <input class="fill-left__radio" name="attr_knowing" value="2" type="checkbox" title="@{knowing}"/>
             <input class="fill-left__radio" name="attr_knowing" value="3" type="checkbox" title="@{knowing}"/>
@@ -187,12 +188,9 @@
           </div>
         </div>
         <div class="skill-component">
-          <label class="input-label"><span class="input-label__text" data-i18n="fiddling With Human Things"></span>
-            <input class="input-label__input" name="attr_fiddling" type="text" title="@{fiddling}"/>
-          </label>
+          <label for="fiddling" data-i18n="fiddling With Human Things"></label>
           <div class="fill-left">
             <input class="fill-left__radio" name="attr_fiddling" value="0" type="hidden" title="@{fiddling}"/>
-            <input class="fill-left__radio" name="attr_fiddling" value="0" checked="" type="checkbox" title="@{fiddling}"/>
             <input class="fill-left__radio" name="attr_fiddling" value="1" type="checkbox" title="@{fiddling}"/>
             <input class="fill-left__radio" name="attr_fiddling" value="2" type="checkbox" title="@{fiddling}"/>
             <input class="fill-left__radio" name="attr_fiddling" value="3" type="checkbox" title="@{fiddling}"/>
@@ -202,41 +200,43 @@
         </div>
       </div>
     </div>
+    <h3 class="guts-header" data-i18n="Guts (Braving)"></h3>
     <div class="guts-section">
       <div class="ability-component">
-        <label class="input-label"><span class="input-label__text" data-i18n="guts Max"></span>
-          <input class="input-label__input" name="attr_guts_max" type="text" title="@{guts|max}"/>
-        </label>
+        <label for="attr_guts_max" data-i18n="Max"></label>
         <div class="fill-left">
           <input class="fill-left__radio" name="attr_guts_max" value="0" type="hidden" title="@{guts|max}"/>
-          <input class="fill-left__radio" name="attr_guts_max" value="0" checked="" type="checkbox" title="@{guts|max}"/>
           <input class="fill-left__radio" name="attr_guts_max" value="1" type="checkbox" title="@{guts|max}"/>
           <input class="fill-left__radio" name="attr_guts_max" value="2" type="checkbox" title="@{guts|max}"/>
           <input class="fill-left__radio" name="attr_guts_max" value="3" type="checkbox" title="@{guts|max}"/>
           <input class="fill-left__radio" name="attr_guts_max" value="4" type="checkbox" title="@{guts|max}"/>
           <input class="fill-left__radio" name="attr_guts_max" value="5" type="checkbox" title="@{guts|max}"/>
+          <input class="fill-left__radio" name="attr_guts_max" value="6" type="checkbox" title="@{guts|max}"/>
+          <input class="fill-left__radio" name="attr_guts_max" value="7" type="checkbox" title="@{guts|max}"/>
+          <input class="fill-left__radio" name="attr_guts_max" value="8" type="checkbox" title="@{guts|max}"/>
+          <input class="fill-left__radio" name="attr_guts_max" value="9" type="checkbox" title="@{guts|max}"/>
+          <input class="fill-left__radio" name="attr_guts_max" value="10" type="checkbox" title="@{guts|max}"/>
         </div>
-        <label class="input-label"><span class="input-label__text" data-i18n="guts Current"></span>
-          <input class="input-label__input" name="attr_guts" type="text" title="@{guts}"/>
-        </label>
+        <label for="attr_guts" data-i18n="Current"></label>
         <div class="fill-left">
           <input class="fill-left__radio" name="attr_guts" value="0" type="hidden" title="@{guts}"/>
-          <input class="fill-left__radio" name="attr_guts" value="0" checked="" type="checkbox" title="@{guts}"/>
           <input class="fill-left__radio" name="attr_guts" value="1" type="checkbox" title="@{guts}"/>
           <input class="fill-left__radio" name="attr_guts" value="2" type="checkbox" title="@{guts}"/>
           <input class="fill-left__radio" name="attr_guts" value="3" type="checkbox" title="@{guts}"/>
           <input class="fill-left__radio" name="attr_guts" value="4" type="checkbox" title="@{guts}"/>
           <input class="fill-left__radio" name="attr_guts" value="5" type="checkbox" title="@{guts}"/>
+          <input class="fill-left__radio" name="attr_guts" value="6" type="checkbox" title="@{guts}"/>
+          <input class="fill-left__radio" name="attr_guts" value="7" type="checkbox" title="@{guts}"/>
+          <input class="fill-left__radio" name="attr_guts" value="8" type="checkbox" title="@{guts}"/>
+          <input class="fill-left__radio" name="attr_guts" value="9" type="checkbox" title="@{guts}"/>
+          <input class="fill-left__radio" name="attr_guts" value="10" type="checkbox" title="@{guts}"/>
         </div>
       </div>
       <div class="skill-subsection">
         <div class="skill-component">
-          <label class="input-label"><span class="input-label__text" data-i18n="investigating Something"></span>
-            <input class="input-label__input" name="attr_investigating" type="text" title="@{investigating}"/>
-          </label>
+          <label for="investigating" data-i18n="investigating Something"></label>
           <div class="fill-left">
             <input class="fill-left__radio" name="attr_investigating" value="0" type="hidden" title="@{investigating}"/>
-            <input class="fill-left__radio" name="attr_investigating" value="0" checked="" type="checkbox" title="@{investigating}"/>
             <input class="fill-left__radio" name="attr_investigating" value="1" type="checkbox" title="@{investigating}"/>
             <input class="fill-left__radio" name="attr_investigating" value="2" type="checkbox" title="@{investigating}"/>
             <input class="fill-left__radio" name="attr_investigating" value="3" type="checkbox" title="@{investigating}"/>
@@ -245,12 +245,9 @@
           </div>
         </div>
         <div class="skill-component">
-          <label class="input-label"><span class="input-label__text" data-i18n="sniffing Something Out"></span>
-            <input class="input-label__input" name="attr_sniffing" type="text" title="@{sniffing}"/>
-          </label>
+          <label for="sniffing" data-i18n="sniffing Something Out"></label>
           <div class="fill-left">
             <input class="fill-left__radio" name="attr_sniffing" value="0" type="hidden" title="@{sniffing}"/>
-            <input class="fill-left__radio" name="attr_sniffing" value="0" checked="" type="checkbox" title="@{sniffing}"/>
             <input class="fill-left__radio" name="attr_sniffing" value="1" type="checkbox" title="@{sniffing}"/>
             <input class="fill-left__radio" name="attr_sniffing" value="2" type="checkbox" title="@{sniffing}"/>
             <input class="fill-left__radio" name="attr_sniffing" value="3" type="checkbox" title="@{sniffing}"/>
@@ -259,12 +256,9 @@
           </div>
         </div>
         <div class="skill-component">
-          <label class="input-label"><span class="input-label__text" data-i18n="surviving Away From Home"></span>
-            <input class="input-label__input" name="attr_surviving" type="text" title="@{surviving}"/>
-          </label>
+          <label for="surviving" data-i18n="surviving Away From Home"></label>
           <div class="fill-left">
             <input class="fill-left__radio" name="attr_surviving" value="0" type="hidden" title="@{surviving}"/>
-            <input class="fill-left__radio" name="attr_surviving" value="0" checked="" type="checkbox" title="@{surviving}"/>
             <input class="fill-left__radio" name="attr_surviving" value="1" type="checkbox" title="@{surviving}"/>
             <input class="fill-left__radio" name="attr_surviving" value="2" type="checkbox" title="@{surviving}"/>
             <input class="fill-left__radio" name="attr_surviving" value="3" type="checkbox" title="@{surviving}"/>
@@ -299,7 +293,7 @@
   const k = (function(){
   const kFuncs = {};
   
-  const cascades = {"attr_character_name":{"name":"character_name","type":"text","defaultValue":"","affects":[],"triggeredFuncs":["setActionCalls"],"listenerFunc":"accessSheet","listener":"change:character_name"},"act_k-network-call":{"name":"k-network-call","type":"action","triggeredFuncs":["kReceive"],"affects":[],"addFuncs":[],"listener":"clicked:k-network-call","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_sheet_version":{"name":"sheet_version","type":"hidden","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:sheet_version","listenerFunc":"accessSheet","defaultValue":0,"calculation":"","initialFunc":"","formula":""},"attr_heckin_good_doggos_tab":{"name":"heckin_good_doggos_tab","type":"hidden","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:heckin_good_doggos_tab","listenerFunc":"accessSheet","defaultValue":"nav-tabs-heckin-good-doggos--main","calculation":"","initialFunc":"","formula":""},"act_nav-tabs-heckin-good-doggos--main":{"name":"nav-tabs-heckin-good-doggos--main","type":"action","triggeredFuncs":["kSwitchTab"],"affects":[],"addFuncs":[],"listener":"clicked:nav-tabs-heckin-good-doggos--main","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"act_nav-tabs-heckin-good-doggos--settings":{"name":"nav-tabs-heckin-good-doggos--settings","type":"action","triggeredFuncs":["kSwitchTab"],"affects":[],"addFuncs":[],"listener":"clicked:nav-tabs-heckin-good-doggos--settings","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_description":{"name":"description","type":"text","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:description","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_breed":{"name":"breed","type":"text","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:breed","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_name":{"name":"name","type":"text","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:name","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_best-friend":{"name":"best-friend","type":"text","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:best-friend","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_help-by":{"name":"help-by","type":"text","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:help-by","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_neighborhood":{"name":"neighborhood","type":"text","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:neighborhood","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_brawn_max":{"name":"brawn_max","type":"text","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:brawn_max","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_brawn":{"name":"brawn","type":"text","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:brawn","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_performing":{"name":"performing","type":"text","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:performing","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_staying":{"name":"staying","type":"text","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:staying","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_sneaking":{"name":"sneaking","type":"text","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:sneaking","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_smarts_max":{"name":"smarts_max","type":"text","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:smarts_max","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_smarts":{"name":"smarts","type":"text","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:smarts","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_sensing":{"name":"sensing","type":"text","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:sensing","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_knowing":{"name":"knowing","type":"text","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:knowing","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_fiddling":{"name":"fiddling","type":"text","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:fiddling","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_guts_max":{"name":"guts_max","type":"text","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:guts_max","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_guts":{"name":"guts","type":"text","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:guts","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_investigating":{"name":"investigating","type":"text","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:investigating","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_sniffing":{"name":"sniffing","type":"text","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:sniffing","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_surviving":{"name":"surviving","type":"text","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:surviving","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_pawsize":{"name":"pawsize","type":"hidden","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:pawsize","listenerFunc":"accessSheet","defaultValue":0,"calculation":"","initialFunc":"","formula":""},"attr_template_start":{"name":"template_start","type":"hidden","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:template_start","listenerFunc":"accessSheet","defaultValue":"@{whisper}&{template:Heckin_Good_Doggos} {{character_name=@{character_name}}} {{character_id=@{character_id}}}","calculation":"","initialFunc":"","formula":""}};
+  const cascades = {"attr_character_name":{"name":"character_name","type":"text","defaultValue":"","affects":[],"triggeredFuncs":["setActionCalls"],"listenerFunc":"accessSheet","listener":"change:character_name"},"act_k-network-call":{"name":"k-network-call","type":"action","triggeredFuncs":["kReceive"],"affects":[],"addFuncs":[],"listener":"clicked:k-network-call","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_sheet_version":{"name":"sheet_version","type":"hidden","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:sheet_version","listenerFunc":"accessSheet","defaultValue":0,"calculation":"","initialFunc":"","formula":""},"attr_heckin_good_doggos_tab":{"name":"heckin_good_doggos_tab","type":"hidden","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:heckin_good_doggos_tab","listenerFunc":"accessSheet","defaultValue":"nav-tabs-heckin-good-doggos--main","calculation":"","initialFunc":"","formula":""},"act_nav-tabs-heckin-good-doggos--main":{"name":"nav-tabs-heckin-good-doggos--main","type":"action","triggeredFuncs":["kSwitchTab"],"affects":[],"addFuncs":[],"listener":"clicked:nav-tabs-heckin-good-doggos--main","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"act_nav-tabs-heckin-good-doggos--settings":{"name":"nav-tabs-heckin-good-doggos--settings","type":"action","triggeredFuncs":["kSwitchTab"],"affects":[],"addFuncs":[],"listener":"clicked:nav-tabs-heckin-good-doggos--settings","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_description":{"name":"description","type":"span","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:description","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_breed":{"name":"breed","type":"span","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:breed","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_name":{"name":"name","type":"span","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:name","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_best-friend":{"name":"best-friend","type":"span","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:best-friend","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_help-by":{"name":"help-by","type":"span","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:help-by","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_neighborhood":{"name":"neighborhood","type":"span","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:neighborhood","listenerFunc":"accessSheet","defaultValue":"","calculation":"","initialFunc":"","formula":""},"attr_brawn_max":{"name":"brawn_max","type":"hidden","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:brawn_max","listenerFunc":"accessSheet","defaultValue":0,"calculation":"","initialFunc":"","formula":""},"attr_brawn":{"name":"brawn","type":"hidden","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:brawn","listenerFunc":"accessSheet","defaultValue":0,"calculation":"","initialFunc":"","formula":""},"attr_performing":{"name":"performing","type":"hidden","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:performing","listenerFunc":"accessSheet","defaultValue":0,"calculation":"","initialFunc":"","formula":""},"attr_staying":{"name":"staying","type":"hidden","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:staying","listenerFunc":"accessSheet","defaultValue":0,"calculation":"","initialFunc":"","formula":""},"attr_sneaking":{"name":"sneaking","type":"hidden","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:sneaking","listenerFunc":"accessSheet","defaultValue":0,"calculation":"","initialFunc":"","formula":""},"attr_smarts_max":{"name":"smarts_max","type":"hidden","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:smarts_max","listenerFunc":"accessSheet","defaultValue":0,"calculation":"","initialFunc":"","formula":""},"attr_smarts":{"name":"smarts","type":"hidden","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:smarts","listenerFunc":"accessSheet","defaultValue":0,"calculation":"","initialFunc":"","formula":""},"attr_sensing":{"name":"sensing","type":"hidden","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:sensing","listenerFunc":"accessSheet","defaultValue":0,"calculation":"","initialFunc":"","formula":""},"attr_knowing":{"name":"knowing","type":"hidden","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:knowing","listenerFunc":"accessSheet","defaultValue":0,"calculation":"","initialFunc":"","formula":""},"attr_fiddling":{"name":"fiddling","type":"hidden","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:fiddling","listenerFunc":"accessSheet","defaultValue":0,"calculation":"","initialFunc":"","formula":""},"attr_guts_max":{"name":"guts_max","type":"hidden","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:guts_max","listenerFunc":"accessSheet","defaultValue":0,"calculation":"","initialFunc":"","formula":""},"attr_guts":{"name":"guts","type":"hidden","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:guts","listenerFunc":"accessSheet","defaultValue":0,"calculation":"","initialFunc":"","formula":""},"attr_investigating":{"name":"investigating","type":"hidden","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:investigating","listenerFunc":"accessSheet","defaultValue":0,"calculation":"","initialFunc":"","formula":""},"attr_sniffing":{"name":"sniffing","type":"hidden","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:sniffing","listenerFunc":"accessSheet","defaultValue":0,"calculation":"","initialFunc":"","formula":""},"attr_surviving":{"name":"surviving","type":"hidden","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:surviving","listenerFunc":"accessSheet","defaultValue":0,"calculation":"","initialFunc":"","formula":""},"attr_pawsize":{"name":"pawsize","type":"hidden","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:pawsize","listenerFunc":"accessSheet","defaultValue":0,"calculation":"","initialFunc":"","formula":""},"attr_template_start":{"name":"template_start","type":"hidden","triggeredFuncs":[],"affects":[],"addFuncs":[],"listener":"change:template_start","listenerFunc":"accessSheet","defaultValue":"@{whisper}&{template:Heckin_Good_Doggos} {{character_name=@{character_name}}} {{character_id=@{character_id}}}","calculation":"","initialFunc":"","formula":""}};
   
   kFuncs.cascades = cascades;
   

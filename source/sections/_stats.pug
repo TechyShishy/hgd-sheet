@@ -1,14 +1,17 @@
 mixin stats
-    .brawn-section 
+    h3(data-i18n='Brawn (Moving)' class='brawn-header')
+    .brawn-section
         +ability({name:'brawn'})
         .skill-subsection
             each skill in [{name:'performing',description:'Feats Of Agility and Strength'},{name:'staying',description:'In Place No Matter What'},{name:'sneaking',description:'Around'}]
                 +skill({name:skill.name,description:skill.description})
+    h3(data-i18n='Smarts (Thinking)' class='smarts-header')
     .smarts-section
         +ability({name:'smarts'})
         .skill-subsection
             each skill in [{name:'sensing',description:'What Others Feel'},{name:'knowing',description:'About Stuff'},{name:'fiddling',description:'With Human Things'}]
                 +skill({name:skill.name,description:skill.description})
+    h3(data-i18n='Guts (Braving)' class='guts-header')
     .guts-section
         +ability({name:'guts'})
         .skill-subsection
@@ -18,14 +21,29 @@ mixin stats
         .skill-subsection {
             display: grid;
             width: 24rem;
+
+            .fill-left__radio{
+                margin-right: 0.25rem;
+            }
         }
         .brawn-section, .smarts-section, .guts-section {
             display:grid;
             grid-template-columns: repeat(1,1fr);
             grid-auto-flow: column;
-
-
-            .input-label__text {
-                text-transform: capitalize;
+            padding: 1rem;
+            justify-items: start;
+            align-items: start;
+            
+            .fill-left__radio{
+                margin-right: 0.25rem;
             }
+        }
+        .brawn-header {
+            background-color: rgba(160, 20, 100, 255);
+        }
+        .smarts-header {
+            background-color: rgba(32, 100, 52, 255);
+        }
+        .guts-header {
+            background-color: rgba(48, 52, 148, 255);
         }
