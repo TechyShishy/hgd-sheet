@@ -4,4 +4,13 @@ mixin neighborhood()
             inputObj:{name:'neighborhood',type:'text'},
             spanObj:{'data-i18n':'Neighborhood Is'}
         })
-        +input({name:'neighborhood',type:'text'})
+    +scss.
+        .neighborhood-component {
+            input {
+                border: 1px solid var(--dm-borderColor);
+            }
+            label{
+                display:grid;
+
+            }
+        }

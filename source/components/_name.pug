@@ -4,4 +4,13 @@ mixin name()
             inputObj:{name:'name',type:'text'},
             spanObj:{'data-i18n':'Name'}
         })
-        +input({name:'name',type:'text'})
+    +scss.
+        .name-component {
+            input {
+                border: 1px solid var(--dm-borderColor);
+            }
+            label{
+                display:grid;
+
+            }
+        }

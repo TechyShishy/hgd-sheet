@@ -3,11 +3,23 @@
 @mixin all {
     @include k.variables;
     // Customize your variables here
+
+    // --lm-backColor:#fff;
+    // --lm-selectedColor:#000;
+    // --lm-unselectedColor1:lightgrey;
+    // --lm-unselectedColor2:transparent;
+    // --lm-checkColor:#000;
+    // --lm-checkedBackColor:transparent;
+    // --lm-borderColor:#000;
+    // --lm-fontColor:#0f0f0f;
+    // --lm-disabledColor:var(--lm-unselectedColor1);
+
 }
 
 @mixin dark {
     @include k.darkMode;
     // Customize your darkmode variable states and styling here.
+
     //--dm-backColor: var(--dark-surface1);
     //--dm-selectedColor: #007476;
     //--dm-unselectedColor1: #0e0e0e;
@@ -17,4 +29,6 @@
     //--dm-borderColor: lightgrey;
     //--dm-fontColor: var(--dark-primarytext);
     //--dm-disabledColor: var(--dm-unselectedColor1);
+
+
 }

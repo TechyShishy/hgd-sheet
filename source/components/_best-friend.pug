@@ -4,4 +4,13 @@ mixin best-friend()
             inputObj:{name:'best-friend',type:'text'},
             spanObj:{'data-i18n':'My Best Friend'}
         })
-        +input({name:'best-friend',type:'text'})
+    +scss.
+        .best-friend-component {
+            input {
+                border: 1px solid var(--dm-borderColor);
+            }
+            label{
+                display:grid;
+
+            }
+        }

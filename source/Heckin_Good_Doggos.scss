@@ -40,6 +40,16 @@ body {
                 @include k.defaultStyles;
                 @include scss.sheet;
                 @include sfc.sheet;
+
+
+                --fillLeftSelectedColor: var(--dm-fillLeftSelectedColor);
+                --fillLeftUnselectedColor: var(--dm-fillLeftUnselectedColor);
+                --fillLeftDataColor: var(--dm-fillLeftDataColor);
+                background-color: var(--backColor);
+                label {
+                    color: var(--fontColor);
+                }
+
             }
         }
     }

@@ -4,4 +4,14 @@ mixin description()
                 inputObj:{name:'description',type:'text'},
                 spanObj:{'data-i18n':'Description'}
             })
-        +textarea({name:'description'})
+
+    +scss.
+        .description-component {
+            input {
+                border: 1px solid var(--dm-borderColor);
+            }
+            label{
+                display:grid;
+
+            }
+        }

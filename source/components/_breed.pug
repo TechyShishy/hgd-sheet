@@ -4,4 +4,13 @@ mixin breed()
             inputObj:{name:'breed',type:'text'},
             spanObj:{'data-i18n':'Breed'}
         })
-        +input({name:'breed',type:'text'})
+    +scss.
+        .breed-component {
+            input {
+                border: 1px solid var(--dm-borderColor);
+            }
+            label{
+                display:grid;
+                
+            }
+        }

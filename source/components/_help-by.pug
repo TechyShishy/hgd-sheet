@@ -4,4 +4,13 @@ mixin help-by()
             inputObj:{name:'help-by',type:'text'},
             spanObj:{'data-i18n':'I Help By'}
         })
-        +input({name:'help-by',type:'text'})
+    +scss.
+        .help-by-component {
+            input {
+                border: 1px solid var(--dm-borderColor);
+            }
+            label{
+                display:grid;
+
+            }
+        }

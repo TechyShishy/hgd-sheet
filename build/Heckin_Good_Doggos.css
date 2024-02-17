@@ -1230,6 +1230,42 @@
   border: var(--inlineRollImportantBorder);
   margin: var(--inlineRollImportantMargin);
 }
+.sheet-rolltemplate-sheet-name .sheet-template .description-component input {
+  border: 1px solid var(--dm-borderColor);
+}
+.sheet-rolltemplate-sheet-name .sheet-template .description-component label {
+  display: grid;
+}
+.sheet-rolltemplate-sheet-name .sheet-template .breed-component input {
+  border: 1px solid var(--dm-borderColor);
+}
+.sheet-rolltemplate-sheet-name .sheet-template .breed-component label {
+  display: grid;
+}
+.sheet-rolltemplate-sheet-name .sheet-template .name-component input {
+  border: 1px solid var(--dm-borderColor);
+}
+.sheet-rolltemplate-sheet-name .sheet-template .name-component label {
+  display: grid;
+}
+.sheet-rolltemplate-sheet-name .sheet-template .best-friend-component input {
+  border: 1px solid var(--dm-borderColor);
+}
+.sheet-rolltemplate-sheet-name .sheet-template .best-friend-component label {
+  display: grid;
+}
+.sheet-rolltemplate-sheet-name .sheet-template .help-by-component input {
+  border: 1px solid var(--dm-borderColor);
+}
+.sheet-rolltemplate-sheet-name .sheet-template .help-by-component label {
+  display: grid;
+}
+.sheet-rolltemplate-sheet-name .sheet-template .neighborhood-component input {
+  border: 1px solid var(--dm-borderColor);
+}
+.sheet-rolltemplate-sheet-name .sheet-template .neighborhood-component label {
+  display: grid;
+}
 .sheet-rolltemplate-sheet-name .sheet-template .collar-section {
   display: grid;
   grid-auto-flow: column;
@@ -1248,6 +1284,9 @@
 }
 .sheet-rolltemplate-sheet-name .sheet-template .tabs {
   flex-direction: column;
+}
+.sheet-rolltemplate-sheet-name .sheet-template .tabs__nav-item {
+  padding-right: 0.5rem;
 }
 
 html {
@@ -1419,6 +1458,12 @@ body .ui-dialog .nav-tabs {
 }
 body .ui-dialog .nav-tabs a {
   font-family: var(--font3);
+}
+body .ui-dialog .tab-content .charsheet {
+  --fillLeftSelectedColor: var(--dm-fillLeftSelectedColor);
+  --fillLeftUnselectedColor: var(--dm-fillLeftUnselectedColor);
+  --fillLeftDataColor: var(--dm-fillLeftDataColor);
+  background-color: var(--backColor);
 }
 body .ui-dialog .tab-content .charsheet select,
 body .ui-dialog .tab-content .charsheet textarea,
@@ -2284,6 +2329,42 @@ body .ui-dialog .tab-content .charsheet .repcontrol-button--add::before {
   font-size: 12px;
   content: "add";
 }
+body .ui-dialog .tab-content .charsheet .description-component input {
+  border: 1px solid var(--dm-borderColor);
+}
+body .ui-dialog .tab-content .charsheet .description-component label {
+  display: grid;
+}
+body .ui-dialog .tab-content .charsheet .breed-component input {
+  border: 1px solid var(--dm-borderColor);
+}
+body .ui-dialog .tab-content .charsheet .breed-component label {
+  display: grid;
+}
+body .ui-dialog .tab-content .charsheet .name-component input {
+  border: 1px solid var(--dm-borderColor);
+}
+body .ui-dialog .tab-content .charsheet .name-component label {
+  display: grid;
+}
+body .ui-dialog .tab-content .charsheet .best-friend-component input {
+  border: 1px solid var(--dm-borderColor);
+}
+body .ui-dialog .tab-content .charsheet .best-friend-component label {
+  display: grid;
+}
+body .ui-dialog .tab-content .charsheet .help-by-component input {
+  border: 1px solid var(--dm-borderColor);
+}
+body .ui-dialog .tab-content .charsheet .help-by-component label {
+  display: grid;
+}
+body .ui-dialog .tab-content .charsheet .neighborhood-component input {
+  border: 1px solid var(--dm-borderColor);
+}
+body .ui-dialog .tab-content .charsheet .neighborhood-component label {
+  display: grid;
+}
 body .ui-dialog .tab-content .charsheet .collar-section {
   display: grid;
   grid-auto-flow: column;
@@ -2305,6 +2386,12 @@ body .ui-dialog .tab-content .charsheet .stats-view {
 }
 body .ui-dialog .tab-content .charsheet .tabs {
   flex-direction: column;
+}
+body .ui-dialog .tab-content .charsheet .tabs__nav-item {
+  padding-right: 0.5rem;
+}
+body .ui-dialog .tab-content .charsheet label {
+  color: var(--fontColor);
 }
 body.sheet-darkmode {
   --backColor:var(--dm-backColor);
