@@ -1,0 +1,7 @@
+mixin name()
+    .name-component
+        +input-label({
+            inputObj:{name:'name',type:'text'},
+            spanObj:{'data-i18n':'Name'}
+        })
+        +input({name:'name',type:'text'})

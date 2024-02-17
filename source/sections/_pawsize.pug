@@ -1,0 +1,10 @@
+mixin pawsize
+    .pawsize-section
+        +fillLeft({
+            radioObj:{name:'pawsize',value:4},
+            valueArray:[4,5,6,7]
+        })
+        +input-label({
+            inputObj:{name:'pawsize',type:'text'},
+            spanObj:{'data-i18n':'Paw Size'}
+        })

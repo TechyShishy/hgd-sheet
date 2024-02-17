@@ -1,0 +1,20 @@
+@use "k-scaffold" as k;
+
+@mixin all {
+    @include k.variables;
+    // Customize your variables here
+}
+
+@mixin dark {
+    @include k.darkMode;
+    // Customize your darkmode variable states and styling here.
+    //--dm-backColor: var(--dark-surface1);
+    //--dm-selectedColor: #007476;
+    //--dm-unselectedColor1: #0e0e0e;
+    //--dm-unselectedColor2: transparent;
+    //--dm-checkColor: #ff0000;
+    //--dm-checkedBackColor: transparent;
+    //--dm-borderColor: lightgrey;
+    //--dm-fontColor: var(--dark-primarytext);
+    //--dm-disabledColor: var(--dm-unselectedColor1);
+}

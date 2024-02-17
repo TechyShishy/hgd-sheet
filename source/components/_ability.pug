@@ -1,0 +1,18 @@
+mixin ability({name})
+    .ability-component
+        +input-label({
+            inputObj:{name:`${name}_max`,type:'text'},
+            spanObj:{'data-i18n':`${name} Max`}
+        })
+        +fillLeft({
+            radioObj:{name:`${name}_max`,value:0},
+            valueArray:[0,1,2,3,4,5]
+        })
+        +input-label({
+            inputObj:{name:`${name}`,type:'text'},
+            spanObj:{'data-i18n':`${name} Current`}
+        })
+        +fillLeft({
+            radioObj:{name:`${name}`,value:0},
+            valueArray:[0,1,2,3,4,5]
+        })

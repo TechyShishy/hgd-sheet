@@ -1,0 +1,10 @@
+mixin skill({name,description})
+    .skill-component
+        +input-label({
+            inputObj:{name:`${name}`,type:'text'},
+            spanObj:{'data-i18n':`${name} ${description}`}
+        })
+        +fillLeft({
+            radioObj:{name:`${name}`,value:0},
+            valueArray:[0,1,2,3,4,5]
+        })

@@ -1,0 +1,7 @@
+mixin description()
+    .description-component
+        +input-label({
+                inputObj:{name:'description',type:'text'},
+                spanObj:{'data-i18n':'Description'}
+            })
+        +textarea({name:'description'})

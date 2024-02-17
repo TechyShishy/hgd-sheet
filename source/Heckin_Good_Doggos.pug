@@ -1,0 +1,20 @@
+include k-scaffold
+include ./components/_index.pug
+include ./sections/_index.pug
+- const templateName = 'Heckin_Good_Doggos';
+//- Stores the sheet version number for use with version control functions
++hidden({name:'sheet version',value:0})
+//- Now, for our actual sheet. We'll wrap this in a main element and give it an ID of main.
+main#main
+    +tabs({name:'Heckin_Good_Doggos',defaultActiveTab:'main'}).flex-box.tiny-gap
+        include ./views/_index.pug
+    +scss.
+        .tabs {
+            flex-direction: column;
+        }
+//- An input to contain template fields that should always be output with a roll.
++hidden({name:'template start',value:`@{whisper}&{template:${templateName}} {{character_name=@{character_name}}} {{character_id=@{character_id}}}`})
+include rolltemplate/_index.pug
++kscript('Heckin_Good_Doggos')
+    //- All additional javascript files should be included in the index file
+    include ./javascript/_index.pug

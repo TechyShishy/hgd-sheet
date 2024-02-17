@@ -1,0 +1,16 @@
+mixin collar
+    .collar-section
+        .appearance-block
+            +description()
+            +breed()
+        .collar-name
+            +name()
+        .collar-background
+            +best-friend()
+            +help-by()
+            +neighborhood()
+    +scss.
+        .collar-section {
+            display: grid;
+            grid-auto-flow: column;
+        }
